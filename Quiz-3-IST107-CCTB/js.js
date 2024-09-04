@@ -287,6 +287,7 @@ function initialize() {
     for (var i = 0; i <= myGrid.cells.length - 1; i++) {
         myGrid.cells[i] = 0;
     }
+    showOptions();
 }
 
 // Ask player if they want to play as X or O. X goes first.
@@ -636,7 +637,7 @@ function closeModal(id) {
 
 function endGame(who) {
     if (who == player) {
-        announceWinner("Congratulations, [Your name] won!");
+        announceWinner(`Congratulations, ${name1} won!`);
     } else if (who == computer) {
         announceWinner("Computer wins!");
     } else {
@@ -656,3 +657,5 @@ function endGame(who) {
     setTimeout(restartGame, 800);
 }
 
+let name1 = prompt ("What's your name?");
+document.getElementById("NAME").textContent = name1;
