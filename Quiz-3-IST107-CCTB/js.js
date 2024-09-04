@@ -287,9 +287,6 @@ function initialize() {
     for (var i = 0; i <= myGrid.cells.length - 1; i++) {
         myGrid.cells[i] = 0;
     }
-    // setTimeout(assignRoles, 500);
-    setInterval(showOptions, 500);
-    // debugger;
 }
 
 // Ask player if they want to play as X or O. X goes first.
