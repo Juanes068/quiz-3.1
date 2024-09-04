@@ -657,5 +657,5 @@ function endGame(who) {
     setTimeout(restartGame, 800);
 }
 
-let name1 = prompt ("What's your name?");
+let name1 = prompt ("What's your name  ?");
 document.getElementById("NAME").textContent = name1;
