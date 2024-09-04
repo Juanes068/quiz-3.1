@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/Quiz-3-IST107-CCTB/index.html"
+        "destination": "Quiz-3-IST107-CCTB/index.html"
       }
     ]
   }
